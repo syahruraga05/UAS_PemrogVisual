@@ -1,0 +1,193 @@
+object Form2: TForm2
+  Left = 257
+  Height = 526
+  Top = 31
+  Width = 764
+  Caption = 'Form2'
+  ClientHeight = 526
+  ClientWidth = 764
+  DesignTimePPI = 144
+  object Label1: TLabel
+    Left = 276
+    Height = 45
+    Top = 36
+    Width = 197
+    Caption = 'Tambah Data'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -32
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 144
+    Height = 25
+    Top = 88
+    Width = 47
+    Caption = 'Nama'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 144
+    Height = 25
+    Top = 144
+    Width = 66
+    Caption = 'Kategori'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 144
+    Height = 25
+    Top = 216
+    Width = 80
+    Caption = 'Harga Beli'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 144
+    Height = 25
+    Top = 276
+    Width = 82
+    Caption = 'Harga Jual'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 144
+    Height = 25
+    Top = 324
+    Width = 95
+    Caption = 'Jumlah Stok'
+    ParentColor = False
+  end
+  object edtNama: TEdit
+    Left = 336
+    Height = 33
+    Top = 88
+    Width = 312
+    TabOrder = 0
+    Text = 'edtNama'
+  end
+  object edtHarga: TEdit
+    Left = 336
+    Height = 33
+    Top = 204
+    Width = 312
+    TabOrder = 1
+    Text = 'edtHarga'
+  end
+  object edtHargaJual: TEdit
+    Left = 336
+    Height = 33
+    Top = 264
+    Width = 312
+    TabOrder = 2
+    Text = 'edtHargaJual'
+  end
+  object edtJumlahStok: TEdit
+    Left = 336
+    Height = 33
+    Top = 312
+    Width = 312
+    TabOrder = 3
+    Text = 'edtJumlahStok'
+  end
+  object btnSimpan: TButton
+    Left = 240
+    Height = 38
+    Top = 420
+    Width = 112
+    Caption = 'Simpan'
+    OnClick = btnSimpanClick
+    TabOrder = 4
+  end
+  object DBLookupComboBox1: TDBLookupComboBox
+    Left = 336
+    Height = 33
+    Top = 144
+    Width = 310
+    DataSource = DataSource1
+    KeyField = 'id'
+    ListField = 'nama'
+    ListFieldIndex = 0
+    ListSource = DataSource1
+    LookupCache = False
+    TabOrder = 5
+  end
+  object SQLQuery1: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'nama'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end>
+    Active = True
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM kategori'
+    )
+    Params = <>
+    Macros = <>
+    Left = 696
+    Top = 192
+  end
+  object SQLConnector1: TSQLConnector
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'latihan1'
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    UserName = 'root'
+    HostName = 'localhost'
+    ConnectorType = 'MySQL 8.0'
+    Left = 468
+    Top = 420
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Database = SQLConnector1
+    Left = 636
+    Top = 420
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery2
+    Left = 696
+    Top = 102
+  end
+  object SQLQuery2: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'nama'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end>
+    Active = True
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM kategori'
+    )
+    Params = <>
+    Macros = <>
+    Left = 152
+    Top = 448
+  end
+end

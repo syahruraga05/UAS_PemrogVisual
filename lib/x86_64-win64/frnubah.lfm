@@ -1,0 +1,206 @@
+object Form3: TForm3
+  Left = 257
+  Height = 486
+  Top = 31
+  Width = 682
+  Caption = 'Form3'
+  ClientHeight = 486
+  ClientWidth = 682
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  object Label1: TLabel
+    Left = 204
+    Height = 45
+    Top = 36
+    Width = 283
+    Caption = 'Form Ubah Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -32
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 144
+    Height = 25
+    Top = 123
+    Width = 66
+    Caption = 'Kategori'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 144
+    Height = 25
+    Top = 168
+    Width = 107
+    Caption = 'Nama Barang'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 144
+    Height = 25
+    Top = 216
+    Width = 80
+    Caption = 'Harga Beli'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 144
+    Height = 25
+    Top = 264
+    Width = 82
+    Caption = 'Harga Jual'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 144
+    Height = 25
+    Top = 312
+    Width = 95
+    Caption = 'Jumlah Stok'
+    ParentColor = False
+  end
+  object edtNama: TEdit
+    Left = 276
+    Height = 33
+    Top = 168
+    Width = 276
+    TabOrder = 0
+    Text = 'edtNama'
+  end
+  object edtHarga: TEdit
+    Left = 276
+    Height = 33
+    Top = 216
+    Width = 276
+    TabOrder = 1
+    Text = 'edtHarga'
+  end
+  object edtHargaJual: TEdit
+    Left = 276
+    Height = 33
+    Top = 264
+    Width = 276
+    TabOrder = 2
+    Text = 'edtHargaJual'
+  end
+  object edtJumlahStok: TEdit
+    Left = 276
+    Height = 33
+    Top = 312
+    Width = 276
+    TabOrder = 3
+    Text = 'edtJumlahStok'
+  end
+  object btnSimpan: TButton
+    Left = 264
+    Height = 38
+    Top = 426
+    Width = 112
+    Caption = 'Simpan'
+    OnClick = btnSimpanClick
+    TabOrder = 4
+  end
+  object Button1: TButton
+    Left = 420
+    Height = 38
+    Top = 426
+    Width = 112
+    Caption = 'Close'
+    TabOrder = 5
+  end
+  object edtKategori: TEdit
+    Left = 276
+    Height = 33
+    Top = 123
+    Width = 272
+    TabOrder = 6
+    Text = 'edtKategori'
+  end
+  object SQLConnector1: TSQLConnector
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'latihan1'
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    UserName = 'root'
+    HostName = 'localhost'
+    ConnectorType = 'MySQL 8.0'
+    Left = 65
+    Top = 408
+  end
+  object SQLQuery1: TSQLQuery
+    PacketRecords = 1
+    UniDirectional = True
+    MaxIndexesCount = 3
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'nama'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end>
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    ReadOnly = True
+    SQL.Strings = (
+      'UPDATE data_barang'
+      'SET'
+      '  kategori_id = :kategori_id,'
+      '  nama = :nama,'
+      '  harga_beli = :harga_beli,'
+      '  harga_jual = :harga_jual,'
+      '  stok = :stok'
+      'WHERE'
+      '  id_barang = :id_barang;'
+      ''
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'kategori_id'
+        ParamType = ptInput
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'nama'
+        ParamType = ptInput
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'harga_beli'
+        ParamType = ptInput
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'harga_jual'
+        ParamType = ptInput
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'stok'
+        ParamType = ptInput
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'id_barang'
+        ParamType = ptInput
+      end>
+    Macros = <>
+    Left = 168
+    Top = 408
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Database = SQLConnector1
+    Left = 64
+    Top = 304
+  end
+end

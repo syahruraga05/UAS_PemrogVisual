@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="9"/>
+        <CursorPos X="6" Y="36"/>
+        <UsageCount Value="43"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <TopLine Value="65"/>
+        <CursorPos X="51" Y="74"/>
+        <UsageCount Value="43"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="frntambah.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form2"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frnTambah"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="36"/>
+        <CursorPos X="35" Y="46"/>
+        <UsageCount Value="43"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="frntransaksi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form7"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frnTransaksi"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="49"/>
+        <CursorPos X="38" Y="54"/>
+        <UsageCount Value="43"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="frntambahtransaksi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form8"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frnTambahTransaksi"/>
+        <EditorIndex Value="5"/>
+        <UsageCount Value="43"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="frntambahdetailtransaksi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form9"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frnTambahDetailTransaksi"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="43"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="frndatacustomer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form10"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frnDataCustomer"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="11"/>
+        <CursorPos X="31" Y="10"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="frnlaporan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form11"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frnLaporan"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="6"/>
+        <CursorPos X="74" Y="36"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="umain.pas"/>
+        <ComponentName Value="Form5"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uMain"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="97"/>
+        <CursorPos X="142" Y="10"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ulogin.pas"/>
+        <ComponentName Value="Form6"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uLogin"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="41"/>
+        <CursorPos X="23" Y="56"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="frndetail.pas"/>
+        <ComponentName Value="Form4"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frnDetail"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="15"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="frnubah.pas"/>
+        <ComponentName Value="Form3"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="frnUbah"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="51"/>
+        <CursorPos X="24" Y="36"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="27">
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="61" TopLine="45"/>
+      </Position>
+      <Position>
+        <Filename Value="frntransaksi.pas"/>
+        <Caret Line="68" Column="24" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="frntransaksi.pas"/>
+        <Caret Line="67" Column="24" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="frnubah.pas"/>
+        <Caret Line="66" Column="63"/>
+      </Position>
+      <Position>
+        <Filename Value="frnubah.pas"/>
+        <Caret Line="65" Column="63" TopLine="42"/>
+      </Position>
+      <Position>
+        <Filename Value="frnubah.pas"/>
+        <Caret Line="66" Column="63" TopLine="43"/>
+      </Position>
+      <Position>
+        <Filename Value="frnubah.pas"/>
+        <Caret Line="67" Column="63" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="frnubah.pas"/>
+        <Caret Line="81" Column="31" TopLine="63"/>
+      </Position>
+      <Position>
+        <Filename Value="frnubah.pas"/>
+        <Caret Line="80" Column="31" TopLine="62"/>
+      </Position>
+      <Position>
+        <Filename Value="frnubah.pas"/>
+        <Caret Line="79" Column="31" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="frnubah.pas"/>
+        <Caret Line="71" Column="47" TopLine="60"/>
+      </Position>
+      <Position>
+        <Filename Value="frnubah.pas"/>
+        <Caret Line="65" Column="31" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="frnubah.pas"/>
+        <Caret Line="64" Column="31" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="frnubah.pas"/>
+        <Caret Line="63" Column="31" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="frnubah.pas"/>
+        <Caret Line="62" Column="31" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="frnubah.pas"/>
+        <Caret Line="64" Column="38" TopLine="58"/>
+      </Position>
+      <Position>
+        <Filename Value="frnubah.pas"/>
+        <Caret Line="63" Column="74" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="frntransaksi.pas"/>
+        <Caret Line="66" Column="71" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="frnubah.pas"/>
+        <Caret Line="74" Column="65" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="frnubah.pas"/>
+        <Caret Line="84" Column="5" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="83" Column="5" TopLine="54"/>
+      </Position>
+      <Position>
+        <Filename Value="umain.pas"/>
+        <Caret Line="132" Column="3" TopLine="126"/>
+      </Position>
+      <Position>
+        <Filename Value="umain.pas"/>
+        <Caret Line="99" Column="15" TopLine="90"/>
+      </Position>
+      <Position>
+        <Filename Value="umain.pas"/>
+        <Caret Line="8" Column="121"/>
+      </Position>
+      <Position>
+        <Filename Value="frntransaksi.pas"/>
+        <Caret Line="66" Column="71" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="umain.pas"/>
+        <Caret Line="74" Column="3" TopLine="62"/>
+      </Position>
+      <Position>
+        <Filename Value="frntransaksi.pas"/>
+        <Caret Line="68" Column="5" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="frndatacustomer.pas"/>
+        <Caret Line="5" Column="29"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

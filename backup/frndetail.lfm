@@ -1,0 +1,146 @@
+object Form4: TForm4
+  Left = 257
+  Height = 446
+  Top = 31
+  Width = 951
+  Caption = 'Form4'
+  ClientHeight = 446
+  ClientWidth = 951
+  DesignTimePPI = 144
+  object DBGrid1: TDBGrid
+    Left = 36
+    Height = 226
+    Top = 110
+    Width = 300
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    TabOrder = 0
+  end
+  object DBGrid2: TDBGrid
+    Left = 372
+    Height = 226
+    Top = 110
+    Width = 552
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource2
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 384
+    Height = 40
+    Top = 24
+    Width = 187
+    Caption = 'Detail Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -29
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    Left = 95
+    Top = 252
+  end
+  object DataSource2: TDataSource
+    DataSet = SQLQuery2
+    Left = 216
+    Top = 252
+  end
+  object SQLQuery1: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'nama'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end>
+    Active = True
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM kategori'
+      ''
+    )
+    Params = <>
+    Macros = <>
+    Left = 56
+    Top = 360
+  end
+  object SQLQuery2: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id_barang'
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'kategori_id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'nama'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'harga_beli'
+        DataType = ftBCD
+        Precision = -1
+      end    
+      item
+        Name = 'harga_jual'
+        DataType = ftBCD
+        Precision = -1
+      end    
+      item
+        Name = 'stok'
+        DataType = ftInteger
+        Precision = -1
+      end>
+    Active = True
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM data_barang WHERE kategori_id'
+      ''
+    )
+    Params = <>
+    Macros = <>
+    DataSource = DataSource1
+    Left = 204
+    Top = 360
+  end
+  object SQLConnector1: TSQLConnector
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'latihan1'
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    UserName = 'root'
+    ConnectorType = 'MySQL 8.0'
+    Left = 350
+    Top = 362
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Database = SQLConnector1
+    Left = 507
+    Top = 365
+  end
+end

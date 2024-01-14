@@ -1,0 +1,220 @@
+object Form7: TForm7
+  Left = 257
+  Height = 677
+  Top = 31
+  Width = 1284
+  Caption = 'Form7'
+  ClientHeight = 677
+  ClientWidth = 1284
+  DesignTimePPI = 144
+  object Label1: TLabel
+    Left = 336
+    Height = 45
+    Top = 12
+    Width = 292
+    Caption = 'Transaksi Penjualan'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -32
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 60
+    Height = 180
+    Top = 132
+    Width = 864
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    TabOrder = 0
+  end
+  object DBGrid2: TDBGrid
+    Left = 60
+    Height = 150
+    Top = 372
+    Width = 864
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource2
+    TabOrder = 1
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 60
+    Height = 38
+    Top = 72
+    Width = 362
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 38
+    ClientWidth = 362
+    Options = []
+    TabOrder = 2
+  end
+  object btnTambah: TButton
+    Left = 588
+    Height = 38
+    Top = 72
+    Width = 180
+    Caption = 'Tambah Transaksi'
+    OnClick = btnTambahClick
+    TabOrder = 3
+  end
+  object btnDetail: TButton
+    Left = 588
+    Height = 38
+    Top = 324
+    Width = 148
+    Caption = 'Tambah Detail'
+    OnClick = btnDetailClick
+    TabOrder = 4
+  end
+  object Button1: TButton
+    Left = 60
+    Height = 38
+    Top = 542
+    Width = 113
+    Caption = 'Cetak Faktur'
+    OnClick = Button1Click
+    TabOrder = 5
+  end
+  object SQLQuery1: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'tanggal'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'customer'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'sub_total'
+        DataType = ftBCD
+        Precision = -1
+        Size = 2
+      end    
+      item
+        Name = 'diskon'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'total'
+        DataType = ftBCD
+        Precision = -1
+        Size = 2
+      end>
+    Active = True
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM transaksi'
+      ''
+    )
+    Params = <>
+    Macros = <>
+    Left = 396
+    Top = 192
+  end
+  object SQLQuery2: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'transaksi_id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'barang_id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'jumlah'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'diskon'
+        DataType = ftInteger
+        Precision = -1
+      end>
+    Active = True
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM detail_transaksi'
+      ''
+    )
+    Params = <>
+    Macros = <>
+    Left = 396
+    Top = 420
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Database = SQLConnector1
+    Left = 537
+    Top = 192
+  end
+  object SQLConnector1: TSQLConnector
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'latihan1'
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    UserName = 'root'
+    HostName = 'localhost'
+    ConnectorType = 'MySQL 8.0'
+    Left = 696
+    Top = 192
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    Left = 264
+    Top = 192
+  end
+  object DataSource2: TDataSource
+    DataSet = SQLQuery2
+    Left = 264
+    Top = 420
+  end
+  object frReport1: TfrReport
+    Dataset = frDBDataSet1
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    DataType = dtDataSet
+    Left = 251
+    Top = 585
+  end
+  object frDBDataSet1: TfrDBDataSet
+    DataSet = SQLQuery1
+    Left = 432
+    Top = 584
+  end
+end

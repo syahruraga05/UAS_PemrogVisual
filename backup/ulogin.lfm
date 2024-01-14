@@ -1,0 +1,137 @@
+object Form6: TForm6
+  Left = 257
+  Height = 402
+  Top = 31
+  Width = 740
+  Caption = 'Form6'
+  ClientHeight = 402
+  ClientWidth = 740
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  object Label1: TLabel
+    Left = 264
+    Height = 48
+    Top = 36
+    Width = 192
+    Caption = 'Form Login'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -36
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 123
+    Height = 25
+    Top = 144
+    Width = 73
+    Caption = 'Usename'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 123
+    Height = 25
+    Top = 204
+    Width = 75
+    Caption = 'Password'
+    ParentColor = False
+  end
+  object edtUsername: TEdit
+    Left = 290
+    Height = 33
+    Top = 132
+    Width = 274
+    OnChange = edtUsernameChange
+    TabOrder = 0
+    Text = 'edtUsername'
+  end
+  object edtPassword: TEdit
+    Left = 290
+    Height = 33
+    Top = 192
+    Width = 274
+    TabOrder = 1
+    Text = 'edtPassword'
+  end
+  object btnLogin: TButton
+    Left = 264
+    Height = 38
+    Top = 276
+    Width = 112
+    Caption = 'Login'
+    OnClick = btnLoginClick
+    TabOrder = 2
+  end
+  object btnCencel: TButton
+    Left = 452
+    Height = 38
+    Top = 276
+    Width = 112
+    Caption = 'Cencel'
+    OnClick = btnCencelClick
+    TabOrder = 3
+  end
+  object SQLQuery1: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'username'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'password'
+        DataType = ftString
+        Precision = -1
+        Size = 250
+      end    
+      item
+        Name = 'nama'
+        DataType = ftString
+        Precision = -1
+        Size = 200
+      end    
+      item
+        Name = 'role'
+        DataType = ftSmallint
+        Precision = -1
+      end>
+    Active = True
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM user WHERE username AND password'
+    )
+    Params = <>
+    Macros = <>
+    Left = 96
+    Top = 300
+  end
+  object SQLConnector1: TSQLConnector
+    Connected = True
+    LoginPrompt = False
+    AfterConnect = SQLConnector1AfterConnect
+    DatabaseName = 'latihan1'
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    UserName = 'root'
+    ConnectorType = 'MySQL 8.0'
+    Left = 564
+    Top = 300
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Database = SQLConnector1
+    Left = 192
+    Top = 300
+  end
+end

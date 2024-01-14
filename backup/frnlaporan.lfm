@@ -1,0 +1,26 @@
+object Form11: TForm11
+  Left = 382
+  Height = 333
+  Top = 216
+  Width = 465
+  Caption = 'Form11'
+  ClientHeight = 333
+  ClientWidth = 465
+  DesignTimePPI = 144
+  object Button1: TButton
+    Left = 160
+    Height = 38
+    Top = 136
+    Width = 169
+    Caption = 'Cetak Laporan'
+    TabOrder = 0
+  end
+  object frReport1: TfrReport
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    DataType = dtDataSet
+    Left = 208
+    Top = 200
+  end
+end
