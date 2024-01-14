@@ -18,7 +18,7 @@
 
 ### **Halaman Ubah Data Barang** <br>
 
-![Gambar](gambar/gambar.4png)<br>
+![Gambar](gambar/gambar4.png)<br>
 
 ### **Halaman Detail Barang** <br>
 
